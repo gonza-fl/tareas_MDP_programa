@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiTienda</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/stylesession.css">
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../assets/logo.png" alt="Logo de la empresa">
+        <h1>TodoLAB</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/products.html">Productos</a></li>
+                <li><a href="../pages/howbuy.html">Como comprar</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="../pages/session.html">LogIn/SingIn</a></li>
+            </ul>
+            <div id="cart">
+                <a href="#">
+                    <img src="../assets/cart.png" alt="Carrito de compras">
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <div id="contact">
+            <h3>
+                Contactanos
+            </h3>
+            <form action="#" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Nombre*<input type="text" id="name" name="name" placeholder="Juan" required></label>
+                    </li>
+                    <li>
+                        <label for="mail">Mail*<input type="email" id="mail" name="mail" placeholder="ejemplo@correo.com" required></label>
+                    </li>
+                    <li>
+                        <label for="tel">Telefono<input type="number" id="tel" name="tel" placeholder="223 5 111111" required></label>
+                    </li>
+                
+                    <li>
+                        <label for="msg">Tu consulta: <textarea name="msgcontact" id="msg" cols="30" rows="10"></textarea> </label>
+                    </li>
+                    <li>
+                        <label for="robot">No soy un robot.<input type="checkbox"></label>
+                    </li>
+                    <li id="button">
+                        <button class="button" id="send" type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+        <div>
+            <h3> Donde encontrarnos. </h3>
+            <ul>
+                <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.409132837042!2d-57.54526892541238!3d-38.01424037192605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc24ce4e8075%3A0x1da655c2ceef32c5!2sGaray%201456%2C%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1685995773367!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                <li>Direccion: Garay 1456, Mar del Plata.</li>
+                <li>Telefono: 223 6 111111</li>
+                <li>info@todolab.com.ar</li>
+                <li></li>
+
+            </ul>
+        </div>
+
+    </main>
+    <footer>
+        <p>© Todos los derechos reservados - JR developments. © </p>
+    </footer>
+</body>
+</html>

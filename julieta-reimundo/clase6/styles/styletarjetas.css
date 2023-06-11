@@ -1,0 +1,124 @@
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+   
+}
+:root {
+    --colorgris : rgb(72, 88, 111);
+    --colorcrema : #ffffc0;
+    --colorbeige : #d6c496;
+    --colorrojo : rgb(214, 46, 46);
+    --colortopo : #283d3e;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+    padding: 0 0% 0 0%;
+}
+
+#products{
+    padding-top: 20px;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+
+}
+.tarjeta {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+    width: 20%;
+   
+    
+
+  }
+  
+  .tarjeta img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--colorrojo);
+  }
+  
+  .tarjeta p {
+    margin-bottom: 10px;
+    
+  }
+  
+  .tarjeta .boton {
+    padding: 8px 16px;
+    background-color: var(--colorrojo);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+  }
+  .tarjeta .boton:hover {
+    transform: scale(1.06);
+    transition: ease-in-out 0.4s;
+  }
+  
+
+#filtros ul{
+    display: flex;
+    width: 100%;
+    padding: 0 10% 0 10%;
+    list-style: none;
+    background-color: var(--colorgris);
+    border-radius: 0 0px 15px 15px;
+}
+#barra{
+    padding-left: 50%;
+}
+li {
+    display: flex;
+    text-align: center;
+    color: var(--colorcrema);
+    padding: 0.5em;
+    align-items: center;
+    justify-content: flex-end;
+}
+li:hover {
+    background-color: var(--colorrojo);
+    transition: ease-in-out 0.4s;
+    
+}
+
+
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    
+}
+  
+.barra-busqueda input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.barra-busqueda button {
+    padding: 8px 16px;
+    background-color: var(--colorcrema);
+    color: var(--colorrojo);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}

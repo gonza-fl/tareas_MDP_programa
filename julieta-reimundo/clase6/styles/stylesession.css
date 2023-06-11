@@ -1,0 +1,81 @@
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+   
+   
+}
+:root {
+    --colorgris : rgb(72, 88, 111);
+    --colorcrema : #ffffc0;
+    --colorbeige : rgb(214, 196, 150);
+    --colorrojo : rgb(214, 46, 46);
+    --colortopo : rgb(40, 61, 62);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: first baseline;
+
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    min-height: 600px;
+    align-items: center;
+    min-width: 500px;
+
+}
+ main div h3{
+    padding: 0 0 10px 0;
+    width: 100%;
+    color: var(--colorrojo);
+    font-size: 30px;
+    border-bottom: var(--colorrojo) solid 2px;
+ }  
+ form{
+    width: 100%;
+    font-size: large;
+
+ }
+main ul{
+    padding-top: 20px;
+}
+main li{
+    width: 100%;
+    list-style: none;
+    padding: 0.5em;
+    color: var(--colortopo);
+}
+main li input{
+    padding: 1em;
+    border-radius: 5px;
+    margin: 5px;
+    border: var(--colortopo) solid 1px;
+}
+main label{
+    display: flex;
+    flex-direction: column;
+}
+
+form button{
+    width: 80%;
+    height: 2em;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    background-color: var(--colorrojo);
+    color: var(--colorcrema);
+}

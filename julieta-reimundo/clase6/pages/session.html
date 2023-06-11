@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiTienda</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/stylesession.css">
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../assets/logo.png" alt="Logo de la empresa">
+        <h1>TodoLAB</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/products.html">Productos</a></li>
+                <li><a href="../pages/howbuy.html">Como comprar</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="#">LogIn/SingIn</a></li>
+            </ul>
+            <div id="cart">
+                <a href="#">
+                    <img src="../assets/cart.png" alt="Carrito de compras">
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <div id="singin">
+            <h3>
+                Registro
+            </h3>
+            <form action="#" method="post">
+                <ul>
+                    <li>
+                        <label for="mail">E-mail*<input type="email" id="mail" name="mail" placeholder="Ejemplo@correo.com" required></label>
+                    </li>
+                    <li>
+                        <label for="usuario">Nombre de usuario*<input type="text" id="usuario" name="usuario" placeholder="Juan123" required></label>
+                    </li>
+                    <li>
+                        <label for="usuario">Contrasena*<input type="password" id="pass" name="pass" placeholder="Constrasena" required></label>
+                    </li>
+                    <li>
+                        <label for="name">Nombre*<input type="text" id="name" name="name" placeholder="Juan" required></label>
+                    </li>
+                    <li>
+                        <label for="surname">Apellido*<input type="text" id="surname" name="surname" placeholder="Perez" required></label>
+                    </li>
+                    <li>
+                        <label for="aderess">Direccion*<input type="text" id="adress" name="land" placeholder="Dorrego 123"></label required>
+                    </li>
+                    <li>
+                        <label for="city">Ciudad*<input type="text" id="city" name="city" placeholder="Mar del Plata"></label required>
+                    </li>
+                    <li>
+                        <label for="province">Provincia*<input type="text" id="province" name="province" placeholder="Buenos Aires"></label required>
+                    </li>
+                    <li>
+                        <label for="land">País*<input type="text" id="land" name="land" placeholder="Argentina"></label required>
+                    </li>
+                    <li>
+                        <label for="robot">Acepto los terminos y condiciones.<input type="checkbox"></label>
+                    </li>
+                    <li id="button">
+                        <button class="button" id="send" type="submit">Registrarse</button>
+                    </li>
+                </ul>
+            </form>
+            <h6>
+                * Campo obligatorio. 
+            </h6>
+        </div>
+      
+        <div id="login">
+            <h3>
+                Iniciar session.
+            </h3>
+            <form action="#" method="post">
+                <ul>
+                    <li>
+                        <label for="usuario">Nombre de usuario*<input type="text" id="usuario" name="usuario" placeholder="Juan123" required></label>
+                    </li>
+                    <li>
+                        <label for="usuario">Contrasena*<input type="password" id="pass" name="pass" placeholder="Constrasena" required></label>
+                    </li>
+                    <li>
+                        <label for="robot">No soy un robot.<input type="checkbox"></label>
+                    </li>
+                    <li id="button">
+                        <button class="button" id="send" type="submit">Iniciar sesion</button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>© Todos los derechos reservados - JR developments. © </p>
+    </footer>
+</body>
+</html>
