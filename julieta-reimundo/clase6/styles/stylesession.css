@@ -17,6 +17,7 @@
 }
 
 
+
 main{
     display: flex;
     justify-content: center;
@@ -27,14 +28,14 @@ main{
 main div{
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 50px 25px;
     padding: 30px;
     border-radius: 15px;
     background-color: #fff;
     text-align: center;
-    min-height: 600px;
     align-items: center;
-    min-width: 500px;
+    flex-wrap: wrap;
+    
 
 }
  main div h3{
@@ -47,10 +48,25 @@ main div{
  form{
     width: 100%;
     font-size: large;
+    display: flex;
+    justify-content: center;
+    
+    
 
  }
+
+ @media only screen and (min-width:500px) {
+
+    form {
+        width: 400px;
+    }
+
+ }
+
+
 main ul{
     padding-top: 20px;
+    width: 100%;
 }
 main li{
     width: 100%;
@@ -63,10 +79,12 @@ main li input{
     border-radius: 5px;
     margin: 5px;
     border: var(--colortopo) solid 1px;
+    
 }
 main label{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 form button{
@@ -75,7 +93,7 @@ form button{
     font-size: large;
     border-radius: 10px;
     border: none;
-    margin: 5px;
+    margin: 1%;
     background-color: var(--colorrojo);
     color: var(--colorcrema);
 }

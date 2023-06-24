@@ -16,9 +16,12 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 main{
     padding: 50px 5% 100px 5%;
    }
+
+
 
 #novedades {
     text-align: center;
@@ -26,6 +29,7 @@ main{
     overflow: scroll;
     max-height: 400px;
     overflow-y: hidden; 
+    
     
 }
 .tarjeta{
@@ -54,12 +58,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+
 #categorias ul{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #categorias li{
     width: 300px;
@@ -78,6 +86,7 @@ main{
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   flex-wrap: wrap;
     
 
 }

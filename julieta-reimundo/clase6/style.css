@@ -13,6 +13,11 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+.page-transition {
+   
+    transition: ease-in-out 0.5s;
+  }
+  
 
 body{
     background-color: var(--colorbeige);
@@ -28,10 +33,12 @@ header {
     background-color: var(--colorgris);
     color: var(--colorcrema);
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     padding: 0 0% 0 10%;
     align-items: center;
-    width: auto
+    width: auto;
+    
     
 }
 
@@ -39,6 +46,7 @@ nav{
     display: flex;
     margin: auto;
     float: right;
+    flex-wrap: wrap;
     
     
 }
@@ -50,6 +58,7 @@ h1 {
 
 nav ul{
     display: flex;
+    flex-wrap: wrap;
 
     
 }
@@ -83,11 +92,11 @@ nav li a:hover{
 }
 
 nav div {
-    position: relative;
-    float: right;
+
     padding-left: 100px;
     text-align: center;
 }
+
 nav div img:hover {
     transform: scale(1.1);
     transition: ease-in-out 0.4s;
@@ -100,9 +109,12 @@ header img {
 }
 
 #cart img {
-
+    position: absolute;
     width: 40px;
     height: fit-content;
+    top: 30px;
+    right: 60px;
+   
 }
 
 
@@ -116,6 +128,7 @@ footer{
     align-items: center;
     width: 100%;
     height: 3rem;
+    flex-wrap: wrap;
 }
 
 

@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    background-color: white;
+    font-family: 'Sen', sans-serif;
+    --color1: rgb(146, 226, 215);
+    
+
+}
+
+
+
+.conteiner{
+    height: 800px;
+    display: grid;
+    grid-template-rows: 20% 40% 40% 10%;
+    grid-template-columns: 10% 30% 30% 30%;
+    grid-template-areas: 'aside header header header'
+                         'aside main   main   main'
+                         'aside main   main   main'
+                         'aside footer footer footer';
+}
+
+.hijo{
+    padding: 5px;
+}
+  /* header */
+header{
+    background-image: url(./assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 30px rgba(20, 185, 174, 0.423);
+    
+}
+
+
+#nietoheader1{
+    align-items: center;
+    justify-items: center;
+}
+
+#nietoheader3 {
+    display: flex;
+    align-items: center;
+   justify-content: end;
+    align-items: start;
+    padding-right: 50px;
+    position: fixed;
+    right: 0;
+    top: -50px;
+    
+    
+}
+
+#nietoheader3 a {
+    border-radius: 10px 10px 300px 300px;
+    padding: 2em;
+    padding-top: 3em;
+    margin: 0px;
+    background-color: var(--color1);
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding-top: 100px;
+    font-weight: bold;
+    box-shadow: 0 0 30px rgba(20, 185, 174, 0.423);
+    
+    
+    
+    
+}
+
+#nietoheader3 a:hover{
+  
+   transform: translateY(20px);
+   transition: ease-in-out 0.5s;
+    
+}
+
+
+#logo {
+    height: 140px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* aside */
+
+aside{
+    /* display: none; */
+    z-index: 9999;
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--color1);
+    grid-area: aside;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    box-shadow: 0 0 30px rgba(20, 185, 174, 0.423);
+    
+}
+
+aside ul{
+    height: 100%;
+    margin-top: 50px;
+    
+}
+
+aside li {
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+
+}
+
+aside li:hover {
+    box-shadow: 5px 5px 20px rgba(106, 106, 106, 0.423);
+    transition: ease-in-out 0.3s;
+    
+
+}
+aside li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    
+
+    
+    
+
+}
+
+/* main */
+
+main{
+    height: fit-content;
+    margin: 40px;
+    border-radius: 20px;
+    background-color: var(--color1);
+    grid-area: main;
+    box-shadow: 0 0 30px rgba(20, 185, 174, 0.423);
+    
+}
+
+/* main1: articulos de interes, esto en realidad quiero que sea un carrusel */
+
+
+#main1{
+    /* background-color: blueviolet; */
+    /* border: solid 3px; */
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px 0px 0px 0px;
+    max-width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+
+    
+    
+}
+
+
+
+#main1 h3{
+    display: inline-block;
+    width: 90%;
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgba(0, 0, 0, 0.15);
+    position: relative;
+    bottom: 60px;
+    left: 0px;
+    padding: 0px;
+    font-weight: lighter;
+    
+}
+
+#main1 a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    top: 0;
+   
+
+}
+
+#main1 img{
+    height: 300px;
+    border-radius: 5px;   
+   
+    
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: white; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color1);
+  } 
+
+
+/* main2: productos de pasteleria*/
+
+#main2 {
+    padding: 30px;
+    /* border: 2px solid rgb(148, 141, 141); */
+    height: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: start;
+    text-align: center;
+
+
+}
+
+.card {
+    padding: 20px;
+    margin: 20px 5px 5px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: fit-content;
+    width: 300px;
+ 
+    
+}
+.card img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    
+}
+.card h3{
+    height: 1em;
+    margin: 1em;
+}
+
+.card p{
+    height: fit-content;
+}
+.card button{
+    width: 80%;
+    border: none;
+    padding: 1em;
+    border-radius: 20px;
+    color: black;
+    background-color: var(--color1);
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+
+}
+.card button:hover{
+    background-color: rgb(66, 202, 182);
+    transform: scale(1.06);
+   
+}
+
+
+/* footer */
+
+footer{
+   
+    background-color: var(--color1); 
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(20, 185, 174, 0.423);
+    z-index: 9999;
+    
+  
+}
