@@ -29,6 +29,7 @@
 }
   /* header */
 header{
+    width: 100%;
     background-image: url(./assets/img/banner.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -69,11 +70,10 @@ header{
     padding-top: 3em;
     margin: 0px;
     background-color: var(--color1);
-    color: black;
+    color: rgb(73, 72, 72);
     text-decoration: none;
     font-size: 15px;
     padding-top: 100px;
-    font-weight: bold;
     box-shadow: 0 0 30px rgba(20, 185, 174, 0.423);
     
     
@@ -224,7 +224,7 @@ main{
   } 
 
 
-/* main2: productos de pasteleria*/
+/* main2: productos de pasteleria PARA QUE QUEDE BIEN TENGO QUE USAR MEDIA QUERY*/
 
 #main2 {
     padding: 30px;
@@ -236,6 +236,7 @@ main{
     flex-direction: row;
     align-items: start;
     text-align: center;
+  
 
 
 }
@@ -247,14 +248,17 @@ main{
     border-radius: 20px;
     height: fit-content;
     width: 300px;
+    
+    
  
     
 }
 .card img {
-    display: block;
+    /* display: block; */
     width: 300px;
-    height: 300px;
     border-radius: 30px;
+    float: inline-end;
+
     
 }
 .card h3{
