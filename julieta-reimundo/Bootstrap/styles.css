@@ -1,0 +1,20 @@
+body{
+    background-color: burlywood;
+}
+
+.midiv{
+    outline: #ae5a5a solid;
+    text-align: center;
+    /* margin: 5px; si le cambio el margin se sale el col*/
+  
+}
+
+.fixmargin {
+    box-sizing: content-box;
+  }
+  
+p{
+    margin: 0 !important;
+    display: inline-block;
+    padding: 10px;
+}
