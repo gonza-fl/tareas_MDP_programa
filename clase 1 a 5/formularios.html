@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" href="./Multimedia/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Contacto</h1> 
+    </header>
+    <main>
+        <form action="#">
+            <label for="name"></label>
+                <input type="text" placeholder="Ingrese su nombre" name="name" id="name" required> <br>
+            <label for="apellido"></label>
+                <input type="text" placeholder="Ingrese su apellido" name="apellido" id="apellido" required> <br>
+            <label for="email"></label>
+                <input type="email" placeholder="Ingrese su Email" name="email" id="email" required> <br>
+            <label for="contraseña"></label>
+                <input type="password" placeholder="Ingrese su contraseña" name="contraseña" id="contraseña" required> <br>
+            <label for="trabajo-si">Trabaja? Si</label>
+                    <input type="radio" name="trabajo" id="trabajo-si" value="trabajo-si" >
+                <label for="trabajo-no">No</label>
+                <input type="radio" name="trabajo" id="trabajo-no" value="trabajo-no"> <br>
+            <label for="pais"></label>
+                <select name="pais">
+                    <option value="selecionar-pais" disabled selected >Seleccione su país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="España">España</option>
+                    <option value="México">México</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>  
+            <br>
+            <label for="check">
+                <input type="checkbox" name="check" id="check" required> Acepto todos los terminos y condiciones
+            </label>
+            <br> 
+            <label for="comunicate"></label>
+                <textarea name="comunicate" id="comunicate" placeholder="Envianos con comentario!"  cols="60" rows="10"></textarea>
+            <br>
+                <input type="reset">
+                <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <div>  
+            <a href="#">&copy; 2023 MDP-Programa</a>
+            <a href="./index.html">volver al inicio</a>
+        </div> 
+    </footer>    
+</body>
+</html>
