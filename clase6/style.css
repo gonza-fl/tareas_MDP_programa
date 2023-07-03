@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+
+.color-acento{
+    color:rgb(151, 213, 200);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+header .logo{
+    font-size: 2em;
+    margin: 10px 10px;
+    color: rgb(151, 213, 200);
+    font-family: 'Abril Fatface', cursive;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(151, 213, 200)
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:url("media/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+button{
+    font-size: 1.5em ;
+    font-weight: bold ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px rgba(0,0,0,5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,5);
+    color:black;
+    background-color: aliceblue;
+}
+
+button:hover{
+    background-color: rgb(151, 213, 200);
+}
+
+#somos-auris .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#somos-auris .texto{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos-auris .img-container{
+    background-image: url("./media/somosauris.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 50%;
+}
+
+#nuestros-productos{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#nuestros-productos .container{
+    padding: 100px 12px;
+}
+
+#nuestros-productos .productos{
+    display: flex;
+    justify-content: space-around;
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+    color: black
+}
+
+#nuestros-productos h3{
+    color: rgb(151, 213, 200)
+}
+
+#nuestros-productos .carta{
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    border: 5px solid rgb(151, 213, 200);
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.carta img{
+    width:100%;
+}
+
+#nuestros-productos .carta button{
+    padding: 10px 40px;
+    color: rgb(151, 213, 200);
+    background-color: aliceblue;
+}
+
+#nuestros-productos .carta button:hover{
+    color: aliceblue;
+    background-color: rgb(151, 213, 200);
+}
+
+#contacto{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    margin: 10px;
+    border: 5px solid  rgb(151, 213, 200);
+    background-color: aliceblue;
+}
+
+footer{
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+}
