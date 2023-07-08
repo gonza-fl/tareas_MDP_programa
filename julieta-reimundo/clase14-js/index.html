@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-01</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aprendiendo JavaScript</h1>
+
+    </header>
+    <main>
+    
+        <!-- BOTON PARA CORRER LA FUNCION JS -->
+      <button onclick="ingresarAlumno()"> Añadir almuno</button>
+
+    </main>
+    <footer>
+
+    </footer>
+    <!-- <script>
+        //Hola mundo
+        // alert('Hola con JS')
+        // alert('Chau con JS')
+
+        // Variables JS
+
+        // Sintaxis de variables
+        //declaracion
+        // let nombre = 'Juli'
+        //definicion
+        //operador de asignacion
+        // nombre = 'Julieta'
+        // let edad
+        // edad= 25
+        //tipos de variables
+        // strings (cadena de caracteres)
+        // const saludo = 'Hola!' 
+        // const numero = 1235
+        // const flotante = 12.35
+
+
+        // Constantes
+        // const PI = 3.14
+
+        // Tipos de variables
+
+        // Operadores algebraocos y 
+
+
+        
+    // </script>
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script> -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+    <script>
+        let alumnoNumero = 0
+        const cantidadAlumnos = 27
+        const listaAlumnos = []
+              
+        function ingresarAlumno(){
+
+            let nombreAlumno = prompt('Ingrese el nombre del alumno.')
+            //operadores de comparacion &&= and ... ||=or
+            if (nombreAlumno == null || ingresarAlumno == '') {
+                alert('Nombre ingresado incorrectamente!')            
+            } else{ 
+            alumnoNumero = alumnoNumero + 1
+            console.log(`Alumno ${nombreAlumno} presente`) //si le pongo un punto despues de presente se rompe
+            console.log(`Alumnos ingrsados ${alumnoNumero} de ${cantidadAlumnos}`)
+            listaAlumnos.push(nombreAlumno)
+            console.log(listaAlumnos) 
+            }
+        }
+        // una vez se crea la funcion debo hacer que corra por eso se escribe nuevamente
+        ingresarAlumno ()
+
+     
+        
+    </script>
+
+</body>
+</html>
+
+<!-- 
+    JavaScript es 
+    1.Un lenguaje interpretado. 
+        El navegador le dice al motor de JS que interprete el lenguaje. 
+        Primero debe convertirse a lenguaje maquina y despues interpretarse
+        Le pasa tus intrucciones se lo pasan a un complidor 
+    2.De tipado dinamico.
+    3.Multiparadigma
+    4.Necesitamos un motor de JS
+    En un documento html necesitamos la etiqueta <script>, script significaria guion
+    
+    Explica con tus palabras como si le estuvieras explicando a un niño de 8 años, los siguientes conceptos:
+
+    /**
+     * Que es una variable
+     * Arreglos
+     * Estructura de control
+     * Asignacion de valores
+     * Reasignacion
+     * Funciones
+     * Operador de comparacion
+     * Operador Logico
+    */
+    
+
+    EN LA CONSOLA DE RUNJS:
+
+    const arreglo = ['julieta', 28, true, false, 'De la maza', 4840]
+    arreglo
+    > [ 'julieta', 28, true, false, 'De la maza', 4840 ]
+
+    arreglo[2]
+    > true
+
+    // ver el largo del arreglo
+    arreglo.length
+    > 6
+
+    // aregar con .push para el ultimo y .unshift para el primerp
+    arreglo.push('Bioquimica')
+    > 7
+
+    arreglo
+    > [ 'julieta', 28, true, false, 'De la maza', 4840, 'Bioquimica' ]
+
+    //agregar en la ultima posicion vacia
+    arreglo[arreglo.length] = '2'
+    > '2'
+
+    arreglo
+    > [ 'julieta', 28, true, false, 'De la maza', 4840, 'Bioquimica', '2' ]
+
+    // agregar un arreglo dentro de un arreglo al ultimo lugar 
+    arreglo.push([1,2,3,4,5])
+    > 9
+
+    arreglo
+    > ['julieta', 28, true, false, 'De la maza', 4840, 'Bioquimica', '2', [ 1, 2, 3, 4, 5 ]]
+
+    // FIFO para filas  y LIFO para pilas
+
+    arreglo[8][2]
+    > 3
+
+    // quitar con .pop para el utilmo y . shift para el primero
+    // ademas creamos constante 'arreglointerno' con el arreglo que quitamos en la ultima posicion de 'arreglo'
+    const arreglointerno = arreglo.pop()
+    >
+
+    arreglo
+    > [ 'julieta', 28, true, false, 'De la maza', 4840, 'Bioquimica', '2' ]
+
+    arreglointerno
+    >[ 1, 2, 3, 4, 5 ]
+
+    
+    
+    -->

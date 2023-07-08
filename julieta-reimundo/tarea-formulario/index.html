@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Formulario de inscripción.</h1>
+        <h2> <em>Curso Full Stack Developer. UTN </em> </h2>
+    </header>
+    <main>
+        <h3>
+            Complete el siguiente formulario para la inscripción a la carrera. Recuerde que el mismo nos servirá para ponernos en contacto y también para la asignación de comisiones y aula virtual:
+        </h3>
+        <form action="#" method="post">
+            <ul>
+                <li>
+                 <label for="name">Nombre*<input type="text" id="name" name="name" placeholder="Nombre" required></label>
+                </li>
+                <li>
+                    <label for="surname">Apellido*<input type="text" id="surname" name="surname" placeholder="Apellido" required></label>
+                </li>
+                <li>
+                    <label for="mail">E-mail*<input type="email" id="mail" name="mail" placeholder="E-mail" required></label>
+                </li>
+                <li>
+                    <label for="land">País*<input type="text" id="land" name="land" placeholder="País"></label required>
+                </li>
+                <li>
+                    <fieldset class="work">
+                        <legend>Trabaja?</legend> 
+                            
+                        <label for="work">Sí</label>
+                        <input type="radio" name="work" id="work">
+                            
+                        <label for="notwork">No<input type="radio" name="work" id="work"> </label>  
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset id="check">
+                        <legend>Horario preferido:</legend>
+                        <input type="checkbox" tabindex="2"
+                                  name="mañana" value="Mañana" > Mañana
+                        <input type="checkbox" tabindex="3"
+                                  name="tarde" value="Tarde" > Tarde
+                       </fieldset>
+        
+                   
+                </li>
+                <li>
+                    <label for="msgarea">Por qué queres estudiar con nosotros?
+                        <textarea name="msgarea" id="msgarea" cols="30" rows="10" placeholder="Escribe..."></textarea>
+                    </label>
+                </li>
+                <li id="button">
+                    <button class="button" id="send" type="submit">Enviar</button>
+                    <button class="button" id="clear" type="reset">Vaciar</button>
+                </li>
+            </ul>
+        </form>
+        <h6>
+            * Campo obligatorio. 
+        </h6>
+    </main>
+    <footer>
+        <h6>© Todos los derechos reservados - JR developments. © </h6>
+    </footer>
+</body>
+</html>

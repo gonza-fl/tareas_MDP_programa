@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 3px solid black;
+  }
+  
+  html {
+    border: 0px;
+  }
+  
+  body {
+    border-color: blueviolet;
+  }
+
+  h1{
+    position: fixed;
+    z-index: 2;
+  }
+  
+  #container {
+    background-color: cadetblue;
+    height: 500px;
+    margin-top: 5%;
+    top: 10px;
+    position: relative;
+    
+  
+  }
+  
+  #red {
+    height: 100px;
+    width: 200px;
+    background-color: brown;
+    /*position: relative;*/
+    top: 50px;
+    left: 50px;
+    display: none;
+  }
+    
+  
+  #blue {
+    width: 100px;
+    height: 100px;
+    background-color: #292dff;
+    border: 0;
+    margin: 20px;
+    position: sticky;
+    top: 10px;
+    
+
+   
+    
+  }
