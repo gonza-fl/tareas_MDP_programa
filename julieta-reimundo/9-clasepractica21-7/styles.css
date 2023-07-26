@@ -1,0 +1,28 @@
+:root{
+    background-color: brown;
+    background-image: url(https://media.istockphoto.com/id/1338059676/es/foto/cola-de-entrada-al-club-nocturno.jpg?s=612x612&w=0&k=20&c=xDoCWsJI-b3CPm2fdsxlAaJel5WTEnXDMww_sCcyuBU=);
+    background-size: 80%;
+    background-position: 50%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 500px;
+    border-radius: 500px 500px;
+    
+}
+button{
+    margin-top: 30px;
+    border-radius: 50px;
+    width: 30%;
+    height: 3em;
+}
