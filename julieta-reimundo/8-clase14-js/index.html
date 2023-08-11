@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="conteiner text-center">
         <h1>Aprendiendo JavaScript</h1>
 
     </header>
-    <main>
-    
+    <main class="conteiner">
+    <div class="conteiner d-flex justify-content-center gap-4">
         <!-- BOTON PARA CORRER LA FUNCION JS -->
-      <button onclick="ingresarAlumno()"> Añadir almuno</button>
-
+        <button class="col-4" onclick="ingresarAlumno()"> Añadir almuno</button>
+        <button class="col-4" onclick="mostrarAlumnos()"> Mostrar lista</button>
+        <button class="col-4" onclick="disparar()"> Alert</button>
+    </div>
+      <ul id="contenedorListaAlumnos"></ul>
     </main>
     <footer>
 
@@ -57,8 +60,6 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script> -->
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
@@ -66,6 +67,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
         let alumnoNumero = 0
@@ -77,19 +80,57 @@
             let nombreAlumno = prompt('Ingrese el nombre del alumno.')
             //operadores de comparacion &&= and ... ||=or
             if (nombreAlumno == null || ingresarAlumno == '') {
-                alert('Nombre ingresado incorrectamente!')            
+                alert('Nombre ingresado incorrectamente')            
             } else{ 
             alumnoNumero = alumnoNumero + 1
             console.log(`Alumno ${nombreAlumno} presente`) //si le pongo un punto despues de presente se rompe
             console.log(`Alumnos ingrsados ${alumnoNumero} de ${cantidadAlumnos}`)
             listaAlumnos.push(nombreAlumno)
-            console.log(listaAlumnos) 
+            // console.log(listaAlumnos) 
             }
         }
         // una vez se crea la funcion debo hacer que corra por eso se escribe nuevamente
-        ingresarAlumno ()
+       
 
+
+        function mostrarAlumnos(){
+            //declaro indice 
+            let indice = 0
+            // nueva constate que la saco del id del html
+            const ul = document.getElementById('contenedorListaAlumnos')
+           
+            ul.className = 'list-group bg-danger'
+            ul.innerHTML = ''
+            // bucle 
+            while(indice < listaAlumnos.length){
+                //constate alumno con el numero
+                const alumno = listaAlumnos[indice]
+                ul.innerHTML += `<li class="list-group-item"> ${alumno}</li>`
+                // console.log(listaAlumnos)
+                indice = indice + 1
+         }
+          
+
+        }
+        
      
+        
+    </script>
+    <script>
+        function disparar(){
+            // let resultado = num * 2
+            // alert(frase + ' resultado: ' + resultado)
+            // Swal.fire('The internet?','holadtfgu',error)
+
+            // Swal.fire('gugu','gujg','error'
+            // )
+                Swal.fire ({
+                    icon: 'success',                   
+                    title: 'hhhh',
+                    text: 'jojojilhgblj',
+                    footer: 'jijijik',
+                })
+            }
         
     </script>
 

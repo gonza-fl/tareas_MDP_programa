@@ -1,0 +1,11 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.cuadrado{
+  
+    height: 200px;
+    width: 200px;
+
+}

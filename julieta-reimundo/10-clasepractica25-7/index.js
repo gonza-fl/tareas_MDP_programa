@@ -27,7 +27,45 @@ function mostrarDatos() {
     }
 }
 
+
+function borrarUsuario(idx) {
+  listaUsuarios.splice(idx, 1);
+  mostrarListaUsuarios();
+}
  
+
+
+let frase = 'hola mundo';
+console.log(frase);
+
+function invertirTxt() {
+    // Convertimos la cadena a un array de caracteres
+    let caracteres = frase.split('');
+
+    // Invertimos el array de caracteres
+    caracteres.reverse();
+
+    // Unimos el array de caracteres en una cadena nuevamente
+    frase = caracteres.join('');
+
+    console.log(frase);
+}
+
+invertirTxt();
+
+
+
+
+
+ 
+ let test = null
+ if(invertirTxt(frase) === 'odnum aloh') {
+   test = true
+   console.log(test)
+ } else {
+   test = false
+   console.log('La funcion no pudo revertir correctamente el texto')
+ }
 
 
 
